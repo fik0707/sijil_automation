@@ -44,7 +44,7 @@
       </div>
       <div class="step-indicator" data-step="7">
         <div class="step-number">7</div>
-        <div class="step-label">Authorize</div>
+        <div class="step-label">Run</div>
       </div>
       <div class="step-indicator" data-step="8">
         <div class="step-number">8</div>
@@ -121,7 +121,7 @@
               <li style="margin-bottom: 0.5rem;">Go to <a href="https://drive.google.com" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">Google Drive</a>.</li>
               <li style="margin-bottom: 0.5rem;">Click <strong>New > New folder</strong> and name it (e.g., <code>Sijil Peserta Bengkel</code>).</li>
               <li style="margin-bottom: 0.5rem;">Open the folder, and copy the full URL from your browser's address bar.</li>
-              <li style="margin-bottom: 0.5rem;"><strong>Paste the URL link that you just copied into the space provided below the section: at Google Drive Folder Link / ID: (Extracted ID will appear below)</strong></li>
+              <li style="margin-bottom: 0.5rem;"><strong>Paste the URL link that you just copied into the space provided below:</strong></li>
             </ol>
             <div class="form-group" style="margin-top: 1.5rem;">
               <label for="folderUrlInput">Google Drive Folder Link / ID: <span id="folderIdLabel">(Extracted ID will appear below)</span></label>
@@ -148,7 +148,7 @@
         <div class="step-grid">
           <div class="instructions-panel">
             <h3>Design Your Certificate</h3>
-            <p>Use <strong style="color: #ea580c; text-decoration: underline;">GOOGLE SLIDES</strong> as certificate template. The script will duplicate this template and replace</p>
+            <p>Use <strong style="color: #ea580c; text-decoration: underline;">GOOGLE SLIDES</strong> as certificate template.</p>
             <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
               <li style="margin-bottom: 0.5rem;">Create a new Google Slide presentation (if using PowerPoint, click <strong>File (Fail)</strong> and select <strong>Save as Google Slides (Simpan sebagai Google Slaid)</strong>).</li>
               <li style="margin-bottom: 0.5rem;">Rename the google slide to the name of workshop/ kursus……</li>
@@ -161,9 +161,10 @@
           <div>
             <h3>Link Your Template</h3>
             <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem;">
-              <li style="list-style-type: none; margin-left: -1.25rem;"><strong>7. Paste URL</strong> at Google Slides Template Link / ID:</li>
+              <li style="list-style-type: none; margin-left: -1.25rem;"><strong>7. Paste URL link below:</strong></li>
             </ol>
             <div class="form-group">
+              <label for="templateUrlInput" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-secondary);">Google Slides Template Link / ID</label>
               <input type="text" id="templateUrlInput" class="form-control" placeholder="https://docs.google.com/presentation/d/106hwURlBwJAniUGcmKL5HyCxhlDBluTZ-1u7M9owLHc/edit..." oninput="updateScriptConfigs()">
               <div class="success-msg" id="templateSuccessMsg">✓ Slide Template ID successfully extracted: <code id="extractedTemplateId"></code></div>
               <div class="error-msg" id="templateErrorMsg">✗ Invalid URL or Presentation ID format.</div>
@@ -179,23 +180,22 @@
           <h2 class="step-title">4. Link Form to Google Sheet</h2>
           <span class="step-badge">Data Link</span>
         </div>
-        <div class="step-grid" style="display: block;">
-          <div class="instructions-panel" style="max-width: 800px; margin: 0 auto;">
+        <div class="step-grid">
+          <div class="instructions-panel">
             <h3>Retrieve Submissions Sheet</h3>
             <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-top: 1rem;">
               <li style="margin-bottom: 0.5rem;">In your Google Form, click the <strong>Responses (Jawapan)</strong> tab.</li>
               <li style="margin-bottom: 0.5rem;">Click the green <strong>Link to Sheets (Hubungkan ke Helaian)</strong> button.</li>
               <li style="margin-bottom: 0.5rem;">Choose <strong>Create a new spreadsheet</strong> and click Create.</li>
-              <li style="margin-bottom: 0.5rem;">Note the columns in the generated Sheet:
-                <ul style="padding-left: 1rem; margin-top: 0.25rem; list-style-type: disc;">
-                  <li>Typically: Column A is <em>Timestamp</em></li>
-                  <li>Column B is <em>Email Address</em> (Index 2)</li>
-                  <li>Column C is <em>Nama Penuh</em> (Index 3)</li>
-                </ul>
-              </li>
             </ol>
             <input type="hidden" id="colNameInput" value="3">
             <input type="hidden" id="colEmailInput" value="2">
+          </div>
+          <div>
+            <h3>Spreadsheet Columns Example</h3>
+            <div style="margin-top: 1rem; border-radius: 8px; border: 1px solid var(--border-glass); overflow: hidden; box-shadow: var(--shadow-card); background: #ffffff; padding: 0.25rem; max-width: 480px;">
+              <img src="step4_sheet_columns.png" alt="Google Sheet Columns Layout" style="display: block; width: 100%; height: auto;">
+            </div>
           </div>
         </div>
       </div>
@@ -291,7 +291,7 @@ Sekian , terima kasih .</textarea>
                 </ul>
               </li>
               <li>Click <strong>Save</strong>.</li>
-              <li>A window will pop out. Scroll it to the bottom and click allow.</li>
+              <li>A window will pop out. Scroll it to the bottom and click <strong>Allow</strong>.</li>
             </ol>
           </div>
           <div>
@@ -315,22 +315,24 @@ Sekian , terima kasih .</textarea>
         </div>
       </div>
 
-      <!-- Step 7: Save & Authorize Run -->
+      <!-- Step 7: Run Script -->
       <div class="wizard-step" id="step7">
         <div class="step-header">
-          <h2 class="step-title">7. Save & Authorize Script</h2>
-          <span class="step-badge">Authorization</span>
+          <h2 class="step-title">7. Run Script</h2>
+          <span class="step-badge">Run Script</span>
         </div>
         <div class="step-grid">
           <div class="instructions-panel">
             <h3>Initial Authorization Run</h3>
             <p>Google requires you to manually approve the permissions for the script to access your Sheets, Drive, Slides, and send emails.</p>
             <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
-              <li style="margin-bottom: 0.5rem;">double click on the <strong>(&lt; &gt;)</strong> symbol on the left side.</li>
+              <li style="margin-bottom: 0.5rem; display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap;">double click on the <strong>(&lt; &gt;)</strong> symbol on the left side. <img src="step7_brackets.png" alt="Brackets Icon" style="height: 20px; width: auto; border: 1px solid var(--border-glass); border-radius: 4px; padding: 1px; background: rgba(255,255,255,0.9); display: inline-block; vertical-align: middle;"></li>
               <li style="margin-bottom: 0.5rem;">Select <code>sendCertificate</code> in the dropdown menu next to the "Debug" button, then click <strong>Run (Jalan)</strong>.</li>
               <li style="margin-bottom: 0.5rem;">Wait for the execution log to be completed. It will appear at the bottom:
-                <pre style="margin: 0.5rem 0; padding: 0.5rem; background: rgba(0,0,0,0.3); border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: #10b981;">Notice    Execution started
-Notice    Execution completed</pre>
+                <div style="background-color: #fffbeb; border-top: 1.5px solid #fbbf24; border-bottom: 1.5px solid #fbbf24; padding: 0.4rem 1rem; font-family: var(--font-mono); font-size: 0.85rem; color: #b45309; margin-top: 0.5rem; letter-spacing: 0.5px; display: inline-flex; gap: 3rem; border-radius: 2px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); font-weight: 500;">
+                  <span>Notice</span>
+                  <span>Execution completed</span>
+                </div>
               </li>
             </ol>
           </div>
