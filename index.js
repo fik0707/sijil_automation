@@ -14,7 +14,7 @@ const config = {
   certPrefix: 'Sijil Penyertaan ',
   emailSubject: 'Sijil Penyertaan ',
   emailBody: 'Assalamualaikum dan Salam Sejahtera,\n\nTuan/Puan,\n\nBersama ini dilampirkan Sijil Penyertaan \n\nKerjasama dan penglibatan yang diberikan amatlah dihargai.\n\nSekian , terima kasih .',
-  emailSignature: 'Urusetia Program'
+  emailSignature: 'Urus setia program'
 };
 
 // Document elements

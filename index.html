@@ -76,7 +76,7 @@
                 </div>
               </li>
               <li style="margin-bottom: 0.5rem;">Click <strong>Settings</strong> at the top of the form.</li>
-              <li style="margin-bottom: 0.5rem;">Under the <strong>Responses</strong> section, enable <strong>Collect email addresses</strong>.</li>
+              <li style="margin-bottom: 0.5rem;">Expand the <strong>"Responses"</strong> section. Click on the options next to <strong>"Collect email addresses"</strong> and choose <strong>"Responder input"</strong>.</li>
               <li style="margin-bottom: 0.5rem;">Click <strong>Send</strong> or <strong>Publish</strong> (top right corner).</li>
             </ol>
           </div>
@@ -117,23 +117,23 @@
         <div class="step-grid">
           <div class="instructions-panel">
             <h3>Prepare Certificate Storage</h3>
-            <ol>
-              <li>Go to <a href="https://drive.google.com" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">Google Drive</a>.</li>
-              <li>Click <strong>New > New folder</strong> and name it (e.g., <code>Sijil Peserta Bengkel</code>).</li>
-              <li>Open the folder, and copy the full URL from your browser's address bar.</li>
-              <li><strong>Paste URL</strong> at Google Drive Folder Link / ID: (Extracted ID will appear below)</li>
+            <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+              <li style="margin-bottom: 0.5rem;">Go to <a href="https://drive.google.com" target="_blank" style="color: var(--accent-cyan); text-decoration: none;">Google Drive</a>.</li>
+              <li style="margin-bottom: 0.5rem;">Click <strong>New > New folder</strong> and name it (e.g., <code>Sijil Peserta Bengkel</code>).</li>
+              <li style="margin-bottom: 0.5rem;">Open the folder, and copy the full URL from your browser's address bar.</li>
+              <li style="margin-bottom: 0.5rem;"><strong>Paste the URL link that you just copied into the space provided below the section: at Google Drive Folder Link / ID: (Extracted ID will appear below)</strong></li>
             </ol>
-            <div class="visual-tip">
-              <h4>💡 Security Tip</h4>
-              <p>Make sure this folder is secure. You do not need to share this folder with participants; the script will email them the PDFs directly.</p>
-            </div>
-          </div>
-          <div>
-            <div class="form-group">
+            <div class="form-group" style="margin-top: 1.5rem;">
               <label for="folderUrlInput">Google Drive Folder Link / ID: <span id="folderIdLabel">(Extracted ID will appear below)</span></label>
               <input type="text" id="folderUrlInput" class="form-control" placeholder="https://drive.google.com/drive/folders/1VzzO0tZTo2IiUs2G7HwB9NymyKUGvcyU" oninput="updateScriptConfigs()">
               <div class="success-msg" id="folderSuccessMsg">✓ Folder ID successfully extracted: <code id="extractedFolderId"></code></div>
               <div class="error-msg" id="folderErrorMsg">✗ Invalid URL or Folder ID format. Please double check.</div>
+            </div>
+          </div>
+          <div>
+            <div class="visual-tip" style="margin-top: 0;">
+              <h4>💡 Security Tip</h4>
+              <p style="color: var(--text-secondary);">Make sure this folder is secure. You do not need to share this folder with participants; the script will email them the PDFs directly.</p>
             </div>
           </div>
         </div>
@@ -149,18 +149,21 @@
           <div class="instructions-panel">
             <h3>Design Your Certificate</h3>
             <p>Use <strong style="color: #ea580c; text-decoration: underline;">GOOGLE SLIDES</strong> as certificate template. The script will duplicate this template and replace</p>
-            <ol>
-              <li>Create a new Google Slide presentation (if using PowerPoint, click <strong>File (Fail)</strong> and select <strong>Save as Google Slides (Simpan sebagai Google Slaid)</strong>).</li>
-              <li>Design your layout</li>
-              <li>Insert a text box.</li>
-              <li>Copy <code>&lt;&lt;FULL NAME&gt;&gt;</code> and paste inside the text box.</li>
-              <li>Click the Share button icon <span style="background: #1a73e8; color: white; padding: 0.2rem 0.5rem; border-radius: 18px; font-size: 0.8rem; font-weight: 500; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; user-select: none; margin-left: 2px; margin-right: 2px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg> Share</span>, change General Access to <strong>"Anyone with the link"</strong>, and copy the link.</li>
-              <li><strong>Paste URL</strong> at Google Slides Template Link / ID.</li>
+            <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+              <li style="margin-bottom: 0.5rem;">Create a new Google Slide presentation (if using PowerPoint, click <strong>File (Fail)</strong> and select <strong>Save as Google Slides (Simpan sebagai Google Slaid)</strong>).</li>
+              <li style="margin-bottom: 0.5rem;">Rename the google slide to the name of workshop/ kursus……</li>
+              <li style="margin-bottom: 0.5rem;">Design your layout</li>
+              <li style="margin-bottom: 0.5rem;">Insert a text box.</li>
+              <li style="margin-bottom: 0.5rem;">Copy <code>&lt;&lt;FULL NAME&gt;&gt;</code> and paste inside the text box. After paste the <code>&lt;&lt;FULL NAME&gt;&gt;</code> into the text box, select the whole <code>&lt;&lt;FULL NAME&gt;&gt;</code> and adjust the font and size to the one you want it to appear on the certificate at the end.</li>
+              <li style="margin-bottom: 0.5rem;">Click the Share button icon <span style="background: #1a73e8; color: white; padding: 0.2rem 0.5rem; border-radius: 18px; font-size: 0.8rem; font-weight: 500; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; user-select: none; margin-left: 2px; margin-right: 2px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg> Share</span>, change General Access to <strong>"Anyone with the link"</strong>, and copy the link.</li>
             </ol>
           </div>
           <div>
+            <h3>Link Your Template</h3>
+            <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem;">
+              <li style="list-style-type: none; margin-left: -1.25rem;"><strong>7. Paste URL</strong> at Google Slides Template Link / ID:</li>
+            </ol>
             <div class="form-group">
-              <label for="templateUrlInput">Google Slides Template Link / ID: <span id="templateIdLabel">(Extracted ID will appear below)</span></label>
               <input type="text" id="templateUrlInput" class="form-control" placeholder="https://docs.google.com/presentation/d/106hwURlBwJAniUGcmKL5HyCxhlDBluTZ-1u7M9owLHc/edit..." oninput="updateScriptConfigs()">
               <div class="success-msg" id="templateSuccessMsg">✓ Slide Template ID successfully extracted: <code id="extractedTemplateId"></code></div>
               <div class="error-msg" id="templateErrorMsg">✗ Invalid URL or Presentation ID format.</div>
@@ -176,38 +179,23 @@
           <h2 class="step-title">4. Link Form to Google Sheet</h2>
           <span class="step-badge">Data Link</span>
         </div>
-        <div class="step-grid">
-          <div class="instructions-panel">
+        <div class="step-grid" style="display: block;">
+          <div class="instructions-panel" style="max-width: 800px; margin: 0 auto;">
             <h3>Retrieve Submissions Sheet</h3>
-            <p>Form submissions must flow into a spreadsheet so the Apps Script can read and process them.</p>
-            <ol>
-              <li>In your Google Form, click the <strong>Responses (Jawapan)</strong> tab.</li>
-              <li>Click the green <strong>Link to Sheets (Hubungkan ke Helaian)</strong> button.</li>
-              <li>Choose <strong>Create a new spreadsheet</strong> and click Create.</li>
-              <li>Note the columns in the generated Sheet:
-                <ul>
+            <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-top: 1rem;">
+              <li style="margin-bottom: 0.5rem;">In your Google Form, click the <strong>Responses (Jawapan)</strong> tab.</li>
+              <li style="margin-bottom: 0.5rem;">Click the green <strong>Link to Sheets (Hubungkan ke Helaian)</strong> button.</li>
+              <li style="margin-bottom: 0.5rem;">Choose <strong>Create a new spreadsheet</strong> and click Create.</li>
+              <li style="margin-bottom: 0.5rem;">Note the columns in the generated Sheet:
+                <ul style="padding-left: 1rem; margin-top: 0.25rem; list-style-type: disc;">
                   <li>Typically: Column A is <em>Timestamp</em></li>
                   <li>Column B is <em>Email Address</em> (Index 2)</li>
                   <li>Column C is <em>Nama Penuh</em> (Index 3)</li>
                 </ul>
               </li>
             </ol>
-          </div>
-          <div>
-            <div class="grid-cols-2">
-              <div class="form-group">
-                <label for="colNameInput">Nama Penuh Column Index: <span>(e.g., Column C is 3)</span></label>
-                <input type="number" id="colNameInput" class="form-control" value="3" min="1" oninput="updateScriptConfigs()">
-              </div>
-              <div class="form-group">
-                <label for="colEmailInput">Email Column Index: <span>(e.g., Column B is 2)</span></label>
-                <input type="number" id="colEmailInput" class="form-control" value="2" min="1" oninput="updateScriptConfigs()">
-              </div>
-            </div>
-            <div class="visual-tip">
-              <h4>💡 Mapping Help</h4>
-              <p>Column numbers start at 1. Column A = 1, B = 2, C = 3, D = 4, etc. Double check which columns contain the Email and the Name.</p>
-            </div>
+            <input type="hidden" id="colNameInput" value="3">
+            <input type="hidden" id="colEmailInput" value="2">
           </div>
         </div>
       </div>
@@ -219,11 +207,7 @@
           <span class="step-badge">Automation Script</span>
         </div>
         <div class="instructions-panel">
-          <h3 style="margin-bottom: 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--accent-cyan);"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            How to Set Up the Script (Easy Step-by-Step for Beginners):
-          </h3>
-          <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+          <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary); margin-top: 1rem;">
             <li style="margin-bottom: 1.5rem;">Open the <strong>Google Sheet</strong> that is linked to your Form (from Step 4).</li>
             <li style="margin-bottom: 1.5rem;">At the top menu bar, click on <strong>Extensions (Sambungan)</strong>, then click on <strong>Apps Script</strong>.</li>
             <li style="margin-bottom: 1.5rem;">A new web page will open. In the center, you will see a default code editor containing:
@@ -262,7 +246,7 @@ Sekian , terima kasih .</textarea>
                 </div>
               </div>
             </li>
-            <li style="margin-bottom: 2rem;">Click on the copy code on the top right:
+            <li style="margin-bottom: 2rem;">Click on the copy code:
               <!-- Generated Code Preview Section -->
               <div class="code-container" style="margin-top: 1rem; max-width: 750px;">
                 <div class="code-header">
@@ -307,6 +291,7 @@ Sekian , terima kasih .</textarea>
                 </ul>
               </li>
               <li>Click <strong>Save</strong>.</li>
+              <li>A window will pop out. Scroll it to the bottom and click allow.</li>
             </ol>
           </div>
           <div>
@@ -340,14 +325,13 @@ Sekian , terima kasih .</textarea>
           <div class="instructions-panel">
             <h3>Initial Authorization Run</h3>
             <p>Google requires you to manually approve the permissions for the script to access your Sheets, Drive, Slides, and send emails.</p>
-            <ol>
-              <li>Go back to the Apps Script <strong>Editor (&lt;/&gt;)</strong> view.</li>
-              <li>Click the <strong>Save (Disimpan)</strong> floppy disk icon <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle; display: inline-block; margin-top: -2px; color: var(--accent-cyan);"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg> at the top menu.</li>
-              <li>Select <code>sendCertificate</code> in the dropdown menu next to the "Debug" button, then click <strong>Run (Jalan)</strong>.</li>
-              <li>A modal popup will say "Authorization Required". Click <strong>Review Permissions</strong>.</li>
-              <li>Choose your Google Account.</li>
-              <li>On the warning screen ("Google hasn't verified this app"), click <strong>Advanced</strong> at the bottom left, then click <strong>Go to Untitled project (unsafe)</strong>.</li>
-              <li>Click <strong>Allow</strong> on the final permissions screen.</li>
+            <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+              <li style="margin-bottom: 0.5rem;">double click on the <strong>(&lt; &gt;)</strong> symbol on the left side.</li>
+              <li style="margin-bottom: 0.5rem;">Select <code>sendCertificate</code> in the dropdown menu next to the "Debug" button, then click <strong>Run (Jalan)</strong>.</li>
+              <li style="margin-bottom: 0.5rem;">Wait for the execution log to be completed. It will appear at the bottom:
+                <pre style="margin: 0.5rem 0; padding: 0.5rem; background: rgba(0,0,0,0.3); border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: #10b981;">Notice    Execution started
+Notice    Execution completed</pre>
+              </li>
             </ol>
           </div>
           <div>
@@ -355,21 +339,14 @@ Sekian , terima kasih .</textarea>
               <li class="checkbox-item" onclick="toggleCheckbox(this)">
                 <div class="checkbox-custom">✓</div>
                 <div class="checkbox-content">
-                  <span class="checkbox-title">Script Saved</span>
-                  <span class="checkbox-desc">Saved the code changes in the editor.</span>
-                </div>
-              </li>
-              <li class="checkbox-item" onclick="toggleCheckbox(this)">
-                <div class="checkbox-custom">✓</div>
-                <div class="checkbox-content">
-                  <span class="checkbox-title">Run Clicked & Authorized</span>
-                  <span class="checkbox-desc">Allowed access permissions for Drive, Slides, and Mail services.</span>
+                  <span class="checkbox-title">Script Run Executed</span>
+                  <span class="checkbox-desc">Allowed access permissions and ran the script.</span>
                 </div>
               </li>
             </ul>
             <div class="visual-tip" style="background: rgba(255, 12, 12, 0.05); border-color: rgba(255, 12, 12, 0.15);">
               <h4 style="color: var(--accent-pink);">⚠️ Important Note</h4>
-              <p style="color: var(--text-secondary);">The execution log will show an error <code>Ralat: Tiada data...</code> if your Sheet is completely empty during the test run. This is normal! As long as the authorization succeeded, you are ready.</p>
+              <p style="color: var(--text-secondary);">The execution log will show an error <code>Ralat: Tiada data...</code> if your Sheet is completely empty during the test run. This is normal! As long as the execution completed, you are ready.</p>
             </div>
           </div>
         </div>
@@ -390,22 +367,15 @@ Sekian , terima kasih .</textarea>
           <div class="step-grid" style="text-align: left; max-width: 800px; margin: 0 auto;">
             <div>
               <h3>How to Test:</h3>
-              <ol style="padding-left: 1.25rem;">
-                <li style="margin-bottom: 0.5rem;">Open your Google Form in **Preview mode** (eye icon at top right).</li>
-                <li style="margin-bottom: 0.5rem;">Fill in your own email and your name in <strong>"Nama Penuh"</strong>.</li>
-                <li style="margin-bottom: 0.5rem;">Submit the form.</li>
-                <li style="margin-bottom: 0.5rem;">Go check your email inbox and your designated Google Drive folder. You should receive a beautiful PDF attachment!</li>
+              <ol style="padding-left: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+                <li style="margin-bottom: 0.5rem;">Open your Google Form.</li>
+                <li style="margin-bottom: 0.5rem;">Click on <strong>'Published'</strong>, click on <strong>"Copy responder link"</strong>, click <strong>"copy"</strong>. Click <strong>"Save"</strong>. Open a new window tab, paste the link and press <strong>"Enter"</strong>.</li>
+                <li style="margin-bottom: 0.5rem;">Fill up the email and full name in capital letters. Click submit.</li>
+                <li style="margin-bottom: 0.5rem;">Check your email inbox and your designated Google Drive folder. You should receive a beautiful PDF attachment!</li>
               </ol>
             </div>
             <div>
               <ul class="checkbox-list">
-                <li class="checkbox-item" onclick="toggleCheckbox(this)">
-                  <div class="checkbox-custom">✓</div>
-                  <div class="checkbox-content">
-                    <span class="checkbox-title">Form submitted in Preview</span>
-                    <span class="checkbox-desc">Sent a test submission to the form.</span>
-                  </div>
-                </li>
                 <li class="checkbox-item" onclick="toggleCheckbox(this)">
                   <div class="checkbox-custom">✓</div>
                   <div class="checkbox-content">
