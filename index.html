@@ -69,7 +69,7 @@
               <li style="margin-bottom: 0.5rem;">Add the form title, for example: <code>Sijil Kursus......</code></li>
               <li style="margin-bottom: 0.5rem;">Create 1 question:
                 <div style="margin-top: 0.25rem; margin-bottom: 0.25rem; padding-left: 10px; border-left: 2px solid var(--accent-cyan);">
-                  <strong>NAMA PENUH (HURUF BESAR)</strong> (Short answer), and make it mandatory (<strong>Required: Yes</strong>).
+                  <strong>NAMA PENUH (HURUF BESAR)</strong> (Short answer), and make it mandatory (<strong>Required: press on the slide bar</strong>).
                 </div>
                 <div style="margin-top: 0.5rem; margin-bottom: 0.5rem; max-width: 480px; border-radius: 8px; border: 1px solid var(--border-glass); overflow: hidden; box-shadow: var(--shadow-card);">
                   <img src="step1_required.png" alt="Google Form Required setting" style="display: block; width: 100%; height: auto;">
@@ -77,6 +77,7 @@
               </li>
               <li style="margin-bottom: 0.5rem;">Click <strong>Settings</strong> at the top of the form.</li>
               <li style="margin-bottom: 0.5rem;">Under the <strong>Responses</strong> section, enable <strong>Collect email addresses</strong>.</li>
+              <li style="margin-bottom: 0.5rem;">Click <strong>Send</strong> or <strong>Publish</strong> (top right corner).</li>
             </ol>
           </div>
           <div>
@@ -257,7 +258,7 @@ Sekian , terima kasih .</textarea>
                 </div>
                 <div class="form-group">
                   <label for="emailSignatureInput">Email Signature (Footer):</label>
-                  <textarea id="emailSignatureInput" class="form-control" oninput="updateScriptConfigs()">Urusetia Program</textarea>
+                  <textarea id="emailSignatureInput" class="form-control" oninput="updateScriptConfigs()">Urus setia program</textarea>
                 </div>
               </div>
             </li>
@@ -291,7 +292,11 @@ Sekian , terima kasih .</textarea>
             <h3>Create Submit Trigger</h3>
             <p>This tells Google to automatically execute our script whenever a participant submits a new Google Form response.</p>
             <ol>
-              <li>Inside the Apps Script editor, click on the **Triggers (Pencetus)** icon in the left sidebar (the alarm clock icon ⏰).</li>
+              <li>Move your cursor to the left and click on the clock icon (red circle) <strong>Trigger</strong>.
+                <div style="margin-top: 0.5rem; margin-bottom: 0.5rem; max-width: 80px; border-radius: 6px; border: 1px solid var(--border-glass); overflow: hidden; box-shadow: var(--shadow-card);">
+                  <img src="step6_trigger.png" alt="Google Apps Script Trigger Sidebar Icon" style="display: block; width: 100%; height: auto;">
+                </div>
+              </li>
               <li>Click the blue <strong>+ Add Trigger (+ Tambah Pencetus)</strong> button in the bottom right.</li>
               <li>Configure the trigger settings exactly as follows:
                 <ul>
