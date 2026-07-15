@@ -1,6 +1,6 @@
 // State variables
 let currentStep = 1;
-const totalSteps = 9;
+const totalSteps = 8;
 
 // Default configurations
 const config = {
@@ -11,10 +11,10 @@ const config = {
   placeholder: '<<FULL NAME>>',
   colName: 3,
   colEmail: 2,
-  certPrefix: 'Sijil Bengkel Penulisan Minit Mesyuarat ',
-  emailSubject: 'Sijil Penyertaan Bengkel Penulisan Minit Mesyuarat 2026',
-  emailBody: 'Assalamualaikum dan Salam Sejahtera,\n\nTuan/Puan,\n\nBersama ini dilampirkan Sijil Penyertaan Bengkel Penulisan Minit Mesyuarat 2026 pada 2 Julai 2026.\n\nKerjasama dan penglibatan yang diberikan amatlah dihargai.\n\nSekian , terima kasih .',
-  emailSignature: 'Unit Kualiti\nHospital Sultanah Bahiyah'
+  certPrefix: 'Sijil Penyertaan ',
+  emailSubject: 'Sijil Penyertaan ',
+  emailBody: 'Assalamualaikum dan Salam Sejahtera,\n\nTuan/Puan,\n\nBersama ini dilampirkan Sijil Penyertaan \n\nKerjasama dan penglibatan yang diberikan amatlah dihargai.\n\nSekian , terima kasih .',
+  emailSignature: 'Urusetia Program'
 };
 
 // Document elements
